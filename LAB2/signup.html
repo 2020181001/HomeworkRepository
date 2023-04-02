@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Sign Up Page
+        </title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <h1 id="top">Welcome to INTERNET-PROGRAMMING SHOP!</h1>
+        <p>
+            <a class="right" href="login.html">  로그인  </a>
+            <a href="#top">  회원가입  </a>
+        </p>
+        <form>
+            <p class="start">개인정보(필수)</p>
+            <p>
+                <label>이름: <input name="name" type="text" autofocus required /></label>
+            </p>
+            <fieldset>
+                <legend>성별</legend>
+                남 <input type="radio" name="gender" value="male" checked />
+                여 <input type="radio" name="gender" value="female" />
+            </fieldset>
+            <p>
+                <label>나이: <input name="age" type="number" step="1" required /></label>
+            </p>
+            <p>
+                <label>생일: <input name="birth" type="date" required /></label>
+            </p>
+            <p>
+                <label>이메일: <input name="email" type="email" placeholder="name@domain.com" autocomplete="email" required /></label>
+            </p>
+            <p>
+                <label>전화번호: <input name="tel" type="tel" placeholder="###-####-####" pattern="\d{3}-d{4}-d{4}" required /></label>
+            </p>
+            <fieldset>
+                <legend>학년</legend>
+                1학년 <input type="checkbox" name="grade" value="grade1" checked />
+                2학년 <input type="checkbox" name="grade2" value="grade" />
+                3학년 <input type="checkbox" name="grade3" value="grade" />
+                4학년 <input type="checkbox" name="grade4" value="grade" />
+            </fieldset>
+            <p>
+                <label>아이디: <input name="id" type="text" required /></label>
+            </p>
+            <p>
+                <label>비밀번호: <input name="password" type="password" required /></label>
+            </p>
+            <p>
+                <label>비밀번호 확인: <input name="passwordconform" type="password" required /></label>
+            </p>
+            <p>
+                <input type="submit" value="Sign Up" class="submit" />
+                <input type="reset" value="Cancel" class="reset" />
+            </p>
+        </form>
+    </body>
+</html>
