@@ -138,6 +138,7 @@ body {
         flex-wrap: wrap;
         justify-content: space-around;
         margin: auto;
+        flex-direction: row;
     }
 }
 .line {
