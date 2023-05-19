@@ -187,9 +187,9 @@ form {
 .category_div {
     display: flex;
     flex-direction: row;
-    position: absolute;
 }
 .filter{
     background-color: rgb(255, 252, 247);
     flex: 0.25;
+    display: flex;
 }
