@@ -12,12 +12,12 @@
             .then((response) => response.json())
             .then((json) => json.products)
             .then((json) => console.log(json));
-            /* for (i=0;i<json.length;i++){
+            for (i=0;i<json.length;i++){
                 const post = document.createElement('div');
                 post.className = 'imgs';
                 post.innerHTML = json.products[i].name + json.products[i].image;
                 document.querySelector('#img-title').appendChild(post)
-            } */
+            }
         }
         loadItems()
         
