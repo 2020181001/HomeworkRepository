@@ -16,11 +16,13 @@
             let products = '';
             for (i=0;i<json.length;i++){
                 products += json.products[i].name //+ json.products[i].image
-                console.log(products);}
+            }
             post.innerHTML = products;
             document.querySelector('#img-title').appendChild(products)
         }
-        loadItems()
+        loadItems().then((products) => {
+            console.log(products)
+        })
     </script>
     <body>
         <h1 class="animation" id="mainpage">Welcome to INTERNET-PROGRAMMING SHOP!</h1>
