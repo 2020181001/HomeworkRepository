@@ -15,9 +15,8 @@
             post.className = 'imgs';
             let products = '';
             for (i=0;i<json.length;i++){
-                products += json.products[i].name
-                console.log(products) //+ json.products[i].image
-            }
+                products += json.products[i].name //+ json.products[i].image
+                console.log(products);}
             post.innerHTML = products;
             document.querySelector('#img-title').appendChild(products)
 
