@@ -180,5 +180,8 @@ form {
 .category_div {
     display: flex;
     flex-direction: row;
-    background-color: rgb(254, 255, 243);
+}
+.filter{
+    background-color: antiquewhite;
+    flex: 0.25;
 }
