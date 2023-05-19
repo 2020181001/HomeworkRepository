@@ -1,6 +1,7 @@
 * {
     max-width: 1020px;
     background-color: rgb(245, 226, 245);
+    margin: auto;
 }
 .top {
     text-align: center;
@@ -52,14 +53,14 @@
     text-align: center;
     flex-direction: row;
 }
-.img img {
+.imgs img {
     align-items: center;
     flex-direction: row;
 }
-.img:hover {
+.imgs:hover {
     transform: scale(1.3);
 }
-.img p {
+.imgs p {
     color: black;
     background-color: rgb(176, 176, 176);
     position: absolute;
@@ -68,7 +69,7 @@
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-.img:hover p {
+.imgs:hover p {
     opacity: 1;
 }
 .img-title {
