@@ -15,6 +15,11 @@
             .then((products) => {
             });
             for (i=0;i<json.length;i++){
+                console.log("for문")
+                console.log("div생성")
+                console.log(products)
+                console.log(products[i])
+                console.log(products[i].image)
                 const post = document.createElement('div');
                 post.className = 'imgs';
                 post.innerHTML = 
@@ -23,6 +28,7 @@
                     <p>${products[i].name}</p>
                 </div>`
                 document.querySelector('#img-title').appendChild(post)
+                console.log("div생성")
             }
         }
         loadItems()
