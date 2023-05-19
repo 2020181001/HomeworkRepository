@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Main Page
+        </title>
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <script>
+        function loadItems() {
+            return fetch("product.json")
+            .then((response) => response.json())
+            .then((json) => json.products);
+            const post = document.createElement('div');
+            post.className = 'imgs';
+            let products = '';
+            for (i=0;i<json.length;i++){
+                products += json.products[i].name
+                console.log(products) //+ json.products[i].image
+            }
+            post.innerHTML = products;
+
+        }
+    </script>
+    <body>
+        <h1 class="animation" id="mainpage">Welcome to INTERNET-PROGRAMMING SHOP!</h1>
+        <p class="nav">
+            <a href="#mainpage" class="navitem">메인페이지</a>
+            <a href="login.html" class="navitem">로그인</a>
+            <a href="signup.html" class="navitem">회원가입</a>
+            <hr width=100% color="black">
+        </p>
+        <div class="maincontent">
+            <div class="imagetitle">
+                <div class="items">
+                    <h2 class="items">ITEMS</h2>
+                    <hr width=100% color="black">
+                </div>
+                <div class = "img-title">
+                    <div class="imgs">
+                        <div class="img">
+                            <img src="IMG_4916.jpg" width="100" height="100" alt="Nike Futura Luxe Mini Backpack Aura" />
+                            <p>Nike Futura Luxe Mini Backpack Aura</p>
+                        </div>
+                    </div>
+                    <div class="imgs">
+                        <div class="img">
+                            <img src="IMG_4918.jpg" width="100" height="100" alt="Stussy World Tour T-Shirt White 2023" />
+                            <p>Stussy World Tour T-Shirt White 2023</p>
+                        </div>
+                    </div>
+                    <div class="imgs">
+                        <div class="img">
+                            <img src="IMG_4920.jpg" width="100" height="100" alt="Dior Saddle Flap Card Holder Gray Dior Oblique Jacquard" />
+                            <p>Dior Saddle Flap Card Holder Gray Dior Oblique Jacquard</p>
+                        </div>
+                    </div>
+                    <div class="imgs">
+                        <div class="img">
+                            <img src="IMG_4922.jpg" width="100" height="100" alt="Thom Browne Ripstop Mesh 4-bar Dropped Back Pleated Mini Skirt Navy" />
+                            <p>Thom Browne Ripstop Mesh 4-bar Dropped Back Pleated Mini Skirt Navy</p>
+                        </div>
+                    </div>
+                    <div class="imgs">
+                        <div class="img">
+                            <img src="IMG_5164.jpg" width="100" height="100" alt="COS Quilted Mini Bag Cream" />
+                            <p>COS Quilted Mini Bag Cream</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="IMG_5165.jpg" width="100" height="100" alt="Diesel C-Seymon Treated Denim Baseball Cap Blue White" />
+                            <p>Diesel C-Seymon Treated Denim Baseball Cap Blue White</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="IMG_5166.jpg" width="100" height="100" alt="Diesel C-Seymon Treated Denim Baseball Cap Blue White" />
+                            <p>Diesel C-Seymon Treated Denim Baseball Cap Blue White</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="infohead">
+                    <h3>introduction of this shop</h3>
+                    <hr width=100% color="black">
+                </div>
+                <div class="infocontents">
+                    <p>This is the newly opened INTERNERPROGRAMMING SHOP. The above products are hot products in our shop. Feel free to watch! This is the newly opened INTERNERPROGRAMMING SHOP. The above products are hot products in our shop. Feel free to watch! This is the newly opened INTERNERPROGRAMMING SHOP. The above products are hot products in our shop. Feel free to watch! This is the newly opened INTERNERPROGRAMMING SHOP. The above products are hot products in our shop. Feel free to watch! This is the newly opened INTERNERPROGRAMMING SHOP. The above products are hot products in our shop. Feel free to watch! This is the newly opened INTERNERPROGRAMMING SHOP. The above products are hot products in our shop. Feel free to watch! </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
