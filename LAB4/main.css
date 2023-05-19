@@ -108,7 +108,6 @@
     }
     .img-title {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: auto;
@@ -120,19 +119,16 @@
 @media screen and (min-width: 801px) {
     .nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
     }
     .imagetitle {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
     }
     .img-title {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-around;
         margin: auto;
