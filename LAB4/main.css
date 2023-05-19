@@ -23,15 +23,6 @@
     0%   {transform: translateX(80%)}
     100% {transform: translateX(0%)}
     }
-.nav{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 10px;
-    align-items: flex-start;
-    justify-content: center;
-    }
 .navitem {
     max-width: 1020px;
 }
@@ -73,14 +64,6 @@
 }
 .imgs:hover p {
     opacity: 1;
-}
-.img-title {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 .infocontents {
     column-count: 2;
