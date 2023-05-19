@@ -189,6 +189,6 @@ form {
     flex-direction: row;
 }
 .filter{
-    background-color: antiquewhite;
+    background-color: rgb(255, 252, 247);
     flex: 0.25;
 }
