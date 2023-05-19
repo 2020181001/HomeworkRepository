@@ -46,8 +46,25 @@
         function category() {
             let category = document.querySelector(".category")
             category.addEventListener("change", (event) => {
-            category_value = document.getElementById('category').value;
+            category_name = document.getElementById('category').value;
             console.log(category_value);
+        })
+        }
+
+        function search() {
+            let search = document.querySelector(".search")
+            search.addEventListener("change",searchValue);
+        }
+
+        function searchValue(e){
+            search_name = e.target.value;
+        }
+
+        function order() {
+            let order = document.querySelector(".order")
+            order.addEventListener("change", (event) => {
+            order_name = document.getElementById('order').value;
+            console.log(order_value);
         })
         }
         
@@ -80,6 +97,23 @@
                                     <option value="기타">Etc</option>
                                 </select>
                             </label>
+                        </p>
+                        <p>
+                            <label>Enter search term: <br>
+                                <input type="text" id="search" class="search" name="search" placeholder="ex.Bag" oninput="search()" />
+                            </label>
+                        </p>
+                        <p>
+                            <label>Choose a sort: <br>
+                                <select id="order" class="order" name="order" onchange="order()">
+                                    <option selected value="none">None</option>
+                                    <option value="가격 높은 순">In order of high prices</option>
+                                    <option value="가격 낮은 순">In order of low prices</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p>
+                            <button type="submit" onclick="submit()">Filter results</button>
                         </p>
                     </div>
                 </div>

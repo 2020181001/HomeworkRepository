@@ -177,3 +177,8 @@ form {
     width: 130;
     height: 30;
 }
+.category_div {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(254, 255, 243);
+}
