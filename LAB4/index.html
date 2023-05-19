@@ -32,6 +32,24 @@
             });
         }
         loadItems()
+
+        window.onscroll = () => {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                getProducts();
+            }
+        }
+
+        let category_name
+        let search_name
+        let order_name
+
+        function category() {
+            let category = document.querySelector(".category")
+            category.addEventListener("change", (event) => {
+            category_value = document.getElementById('category').value;
+            console.log(category_value);
+        })
+        }
         
     </script>
     <body>
@@ -47,6 +65,23 @@
                 <div class="items">
                     <h2 class="items">ITEMS</h2>
                     <hr width=100% color="black">
+                </div>
+                <div class="category_div">
+                    <div class="filter">
+                        <p>
+                            <label>Choose a category: <br>
+                                <select id="category" class="category" name="category" onchange="category()">
+                                    <option selected value="All">All</option>
+                                    <option value="가방">Bag</option>
+                                    <option value="상의">Top</option>
+                                    <option value="원피스">One-piece</option>
+                                    <option value="하의">Bottom</option>
+                                    <option value="신발">Shoes</option>
+                                    <option value="기타">Etc</option>
+                                </select>
+                            </label>
+                        </p>
+                    </div>
                 </div>
                 <div class = "img-title">
                     <!-- <div class="imgs">
