@@ -18,7 +18,7 @@
                 products += json.products[i].name //+ json.products[i].image
             }
             post.innerHTML = products;
-            document.querySelector('#img-title').appendChild(products)
+            document.querySelector('#img-title').appendChild(post)
         }
         loadItems().then((products) => {
             console.log(products)
