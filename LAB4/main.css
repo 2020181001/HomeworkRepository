@@ -39,7 +39,6 @@
     display: flex;
     position: relative; 
     flex-wrap: wrap;
-    width: 10%;
     padding: 60px 30px;
     border: 1px solid black;
     text-align: center;
