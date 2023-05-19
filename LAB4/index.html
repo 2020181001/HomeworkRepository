@@ -8,14 +8,20 @@
     </head>
     <script>
         function loadItems() {
+            const ul = document.querySelector('#img-title')
             return fetch("product.json")
             .then((response) => response.json())
             .then((json) => json.products)
-            .then((json) => console.log(json.products[i].name + json.products[i].image));
+            .then((products) => {
+            });
             for (i=0;i<json.length;i++){
                 const post = document.createElement('div');
                 post.className = 'imgs';
-                post.innerHTML = json.products[i].name + json.products[i].image;
+                post.innerHTML = 
+                `<div class='img'><img src=${products.products[i].image} 
+                    width="100" height="100" alt=${products.products[i].content}/>
+                    <p>${products.products[i].name}</p>
+                </div>`
                 document.querySelector('#img-title').appendChild(post)
             }
         }
