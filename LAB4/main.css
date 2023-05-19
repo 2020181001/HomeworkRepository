@@ -53,6 +53,7 @@
     border: 1px solid black;
     text-align: center;
     flex-direction: row;
+    transition: transform 2s;
 }
 .imgs img {
     align-items: center;
