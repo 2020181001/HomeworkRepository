@@ -11,7 +11,7 @@
             return fetch("product.json")
             .then((response) => response.json())
             .then((json) => json.products)
-            .then((json) => console.log(json));
+            .then((json) => console.log(json.products[i].name + json.products[i].image));
             for (i=0;i<json.length;i++){
                 const post = document.createElement('div');
                 post.className = 'imgs';
