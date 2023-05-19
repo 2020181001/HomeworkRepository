@@ -18,9 +18,9 @@
                 const post = document.createElement('div');
                 post.className = 'imgs';
                 post.innerHTML = 
-                `<div class='img'><img src=${products.products[i].image} 
-                    width="100" height="100" alt=${products.products[i].content}/>
-                    <p>${products.products[i].name}</p>
+                `<div class='img'> 
+                    <img src=${products[i].image} width="100" height="100" alt=${products[i].content}/>
+                    <p>${products[i].name}</p>
                 </div>`
                 document.querySelector('#img-title').appendChild(post)
             }
