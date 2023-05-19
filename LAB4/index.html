@@ -80,9 +80,9 @@
 
             let array = [];
 
-            if (search_value && search_value !== "") {
+            if (search_name && search_name !== "") {
                 for (let product of json.products) {
-                if (product.name === search_value) {
+                if (product.name === search_name) {
                     array.push({...product});
                 }
                 }
@@ -93,19 +93,19 @@
                 <p>${array[0].price}</p>`;
                 document.querySelector('.img-title').appendChild(div)
             }
-            else if (category_value && category_value !== "All" ) {
+            else if (category_name && category_name !== "All" ) {
                 for (let product of json.products) {
-                if (product.category === category_value) {
+                if (product.category === category_name) {
                     array.push({...product});
                 }
                 }
 
-                if (order_value && order_value !== "none" && order_value === "가격 낮은 순") {
+                if (order_name && order_name !== "none" && order_name === "가격 낮은 순") {
                     array.sort(function(a,b) {
 	                return parseFloat(a.price) - parseFloat(b.price);
                 });
                 }
-                if (order_value && order_value !== "none" && order_value === "가격 높은 순") {
+                if (order_name && order_name !== "none" && order_name === "가격 높은 순") {
                     array.sort(function(a,b) {
 	                return parseFloat(b.price) - parseFloat(a.price);
                 });
@@ -128,12 +128,12 @@
                 }
                 console.log(array)
 
-                if (order_value && order_value !== "none" && order_value === "가격 낮은 순") {
+                if (order_name && order_name !== "none" && order_name === "가격 낮은 순") {
                     array.sort(function(a,b) {
 	                return parseFloat(a.price) - parseFloat(b.price);
                 });
                 }
-                if (order_value && order_value !== "none" && order_value === "가격 높은 순") {
+                if (order_name && order_name !== "none" && order_name === "가격 높은 순") {
                     array.sort(function(a,b) {
 	                return parseFloat(b.price) - parseFloat(a.price);
                 });
