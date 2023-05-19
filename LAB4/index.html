@@ -122,11 +122,10 @@
                 }
             }
             else {
-                console.log("else문")
+                console.log(category_name)
                 for (let product of json.products) {
                   array.push({...product});
                 }
-                console.log(array)
 
                 if (order_name && order_name !== "none" && order_name === "가격 낮은 순") {
                     array.sort(function(a,b) {
