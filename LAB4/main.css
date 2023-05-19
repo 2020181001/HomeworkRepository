@@ -3,6 +3,9 @@
     /* background-color: rgb(245, 226, 245); */
     margin: auto;
 }
+body {
+    background-color: rgb(245, 226, 245);
+}
 .top {
     text-align: center;
     font-family: "Lucida Console", "Courier New", monospace;
