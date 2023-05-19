@@ -13,8 +13,7 @@
             .then((response) => response.json())
             .then((json) => json.products)
             .then((products) => {
-            });
-            for (i=0;i<json.length;i++){
+                for (i=0;i<json.length;i++){
                 console.log("for문")
                 console.log("div생성")
                 console.log(products)
@@ -30,6 +29,7 @@
                 document.querySelector('#img-title').appendChild(post)
                 console.log("div생성")
             }
+            });
         }
         loadItems()
         
